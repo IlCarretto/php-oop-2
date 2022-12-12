@@ -9,7 +9,7 @@ class Prodotto
     public $type;
     public $categories;
 
-    public function __construct(String $image, String $title, int $price, String $marca, String $type, Categoria $categories)
+    public function __construct(String $image, String $title, float $price, String $marca, String $type, Categoria $categories)
     {
         $this->image = $image;
         $this->title = $title;
@@ -17,5 +17,10 @@ class Prodotto
         $this->marca = $marca;
         $this->type = $type;
         $this->categories = $categories;
+    }
+
+    public function getDetails()
+    {
+        return "Price: {$this->price}; Marca: {$this->marca}";
     }
 }
