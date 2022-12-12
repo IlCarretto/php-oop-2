@@ -7,5 +7,5 @@ $categories = [
     new Category("Gatto")
 ]
 
-$cibo = new Prodotto("croccantini.jpg", "Croccantini", 12.99, "Monge", "Cibo", $categories[0]);
+$cibo = new Prodotto("croccantini.jpg", "Croccantini", 12.99, "Monge", "Cibo", new Category("Cane"));
 var_dump($cibo);

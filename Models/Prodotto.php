@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . "/Categoria.php";
 class Prodotto
 {
     public $image;
@@ -8,7 +9,7 @@ class Prodotto
     public $type;
     public $categories;
 
-    public function __construct(String $image, String $title, int $price, String $marca, String $type, array $categories = [])
+    public function __construct(String $image, String $title, int $price, String $marca, String $type, Categoria $categories)
     {
         $this->image = $image;
         $this->title = $title;
