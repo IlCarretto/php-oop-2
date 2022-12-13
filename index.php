@@ -5,11 +5,6 @@ require_once __DIR__ . "/Models/Cibo.php";
 require_once __DIR__ . "/Models/Giochi.php";
 require_once __DIR__ . "/Models/Cuccia.php";
 
-$categories = [
-    new Categoria("Cane"),
-    new Categoria("Gatto")
-];
-
 $corda = new Prodotto("corda.jpg", "Corda", 9.99, "Unknown", "Prodotto", new Categoria("Cane"));
 
 $croccantini = new Cibo("croccantini.jpg", "Croccantini", 12.99, "Monge", "Cibo", new Categoria("Gatto"), "25/12/20");

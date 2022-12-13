@@ -14,4 +14,9 @@ class Cuccia extends Prodotto
         $this->weight = $weight;
         $this->is_open = $is_open;
     }
+
+    public function getDetails()
+    {
+        return "Price: {$this->price}; Marca: {$this->marca}; Material: {$this->material}; Weight: {$this->weight}; Type: {$this->is_open}";
+    }
 }

@@ -10,4 +10,9 @@ class Cibo extends Prodotto
         parent::__construct($image, $title, $price, $marca, $type, $categories);
         $this->expire_date = $expire_date;
     }
+
+    public function getDetails()
+    {
+        return "Price: {$this->price}; Marca: {$this->marca}; Expire Date: {$this->expire_date}";
+    }
 }

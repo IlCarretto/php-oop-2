@@ -14,4 +14,9 @@ class Giochi extends Prodotto
         $this->color = $color;
         $this->texture = $texture;
     }
+
+    public function getDetails()
+    {
+        return "Price: {$this->price}; Marca: {$this->marca}; Material: {$this->material}; Color: {$this->color}; Texture: {$this->texture}";
+    }
 }
